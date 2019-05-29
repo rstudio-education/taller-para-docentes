@@ -1,0 +1,38 @@
+---
+title: "Aprende y Enseña R"
+subtitle: "¡Bienvenidos!"
+author: "Edgar Ruiz"
+date: "Junio 2019"
+output:
+  xaringan::moon_reader:
+    css: "include/aprender.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+  - images
+---
+class: dark, middle, center
+# ¿Por que **R**?
+---
+class: regular
+## Lenguaje hecho por, y para estadísticos
+---
+class: regular
+## Fácil de aprender
+---
+class: regular
+## Comunidad mundial, y amigable
+---
+class: regular
+## 13 mil extensiones
+---
+class: regular
+## Integración con otros sistemas
+---
+class: regular
+## Es grátis!
+

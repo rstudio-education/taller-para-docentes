@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+h1, h2, h3, p, body{
+  font-family: 'Source Sans Pro';
+  font-weight: 200;
+}
+
+strong { font-weight: 400; }
+
+.title-slide h1 { font-size: 4em; }
+.title-slide h2 { font-size: 3em; }
+.title-slide h3 { font-size: 2em; }
+.title-slide h4 { font-size: 1em; }
+
+.regular h1 { font-size: 4em; }
+.regular h2 { font-size: 3em; }
+.regular h3 { font-size: 2em; }
+.regular h4 { font-size: 1em; }
+
+.dark { 
+  background-color: #666; 
+  color: #fff;
+}
+.dark h1 { font-size: 6em; }
+
+a, a > code {
+  font-family: 'PT Mono';
+  color: rgb(249, 38, 114);
+  text-decoration: none;
+}
+
