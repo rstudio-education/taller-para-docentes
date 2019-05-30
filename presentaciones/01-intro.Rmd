@@ -1,6 +1,6 @@
 ---
 title: "¡Bienvenidos!"
-subtitle: "<strong>Aprende y Enseña R</strong>"
+subtitle: "<strong>Enseñando Análisis de Datos</strong>"
 author: "Edgar Ruiz"
 date: "Junio 2019"
 output:
@@ -16,7 +16,7 @@ resource_files:
   - images
 ---
 class: dark, middle, center
-# "Yo no quiero enseñar **R**..."
+# ""Yo no quiero enseñar **analysis de datos**...""
 ---
 class:regular
 # "Yo quiero enseñar..."
@@ -42,52 +42,72 @@ class: dark, middle, center
 
 ---
 class:regular
-# "Necesito una herramienta que..."
+# Necesita herramientas que...
 
 --
-* Diseñada para el análisis de datos
+* Fácil de empezar a aprender
 
 --
-* Es fácil de usar
+* Fácil de utilizar, y avanzar
 
 --
-* No es cara 
+* Apoyan análisis pequeños y grandes
 
 --
-* Se utiliza en la escuela y el trabajo
-
----
-class:regular
-# La herramienta tambien tiene que...
-
---
-* Reproducir el análisis 
-
---
-* Proveer variedad de formatos 
-
---
-* El usuario puede encontrar ayuda facilmente
+* Habilidades son útiles más alla de la universidad
 
 ---
 class: dark, middle, center
 # ¿Por que **R**?
----
-class: regular
-## Lenguaje hecho por, y para estadísticos
----
-class: regular
-## Fácil de aprender
----
-class: regular
-## Comunidad mundial, y amigable
----
-class: regular
-## 13 mil extensiones
----
-class: regular
-## Integración con otros sistemas
----
-class: regular
-## Es grátis!
 
+---
+class: regular
+# Ventajas de **R**
+
+--
+* Lenguaje hecho por, y para estadísticos
+
+--
+*  Fácil de aprender
+
+--
+*  Comunidad mundial, y amigable
+
+--
+*  Integración con otros sistemas
+
+--
+*  Es grátis!
+
+---
+class: dark, middle, center
+# ¿Que cubriremos?
+
+---
+class: regular
+# Herramientas
+
+--
+* R
+
+--
+* RStudio
+
+--
+* RStudio Cloud
+
+--
+* tidyverse
+
+---
+class: regular
+# Agenda
+
+--
+* Hoy - 2 horas - Sesión 1 <br>
+**Como usar las herramientas**
+
+
+--
+* Mañana - 2 horas - Sesión 2 <br>
+**Como usar las herramientas, para enseñar**
