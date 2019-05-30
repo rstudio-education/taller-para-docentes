@@ -1,6 +1,6 @@
 ---
-title: "Aprende y Enseña R"
-subtitle: "¡Bienvenidos!"
+title: "¡Bienvenidos!"
+subtitle: "<strong>Aprende y Enseña R</strong>"
 author: "Edgar Ruiz"
 date: "Junio 2019"
 output:
@@ -14,6 +14,61 @@ output:
 resource_files:
   - include
   - images
+---
+class: dark, middle, center
+# "Yo no quiero enseñar **R**..."
+---
+class:regular
+# "Yo quiero enseñar..."
+
+--
+* Estadística
+
+--
+* Biología
+
+--
+* Sociología
+
+--
+* Finanzas
+
+--
+* Diciplina que necesita analizar datos
+
+---
+class: dark, middle, center
+# "¿Por que estoy aquí?"
+
+---
+class:regular
+# "Necesito una herramienta que..."
+
+--
+* Diseñada para el análisis de datos
+
+--
+* Es fácil de usar
+
+--
+* No es cara 
+
+--
+* Se utiliza en la escuela y el trabajo
+
+---
+class:regular
+# La herramienta tambien tiene que...
+
+--
+* Reproducir el análisis 
+
+--
+* Proveer variedad de formatos 
+
+--
+* El usuario puede encontrar ayuda facilmente
+
 ---
 class: dark, middle, center
 # ¿Por que **R**?

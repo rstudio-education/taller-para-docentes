@@ -9,20 +9,24 @@ h1, h2, h3, p, body{
 strong { font-weight: 400; }
 
 .title-slide h1 { font-size: 4em; }
-.title-slide h2 { font-size: 3em; }
+.title-slide h2 { font-size: 4em; }
 .title-slide h3 { font-size: 2em; }
 .title-slide h4 { font-size: 1em; }
 
-.regular h1 { font-size: 4em; }
+.regular h1 { font-size: 3.5em; }
 .regular h2 { font-size: 3em; }
 .regular h3 { font-size: 2em; }
 .regular h4 { font-size: 1em; }
+.regular li { 
+  font-size: 2.5em; 
+  line-height: 1.5;
+}
 
 .dark { 
   background-color: #666; 
   color: #fff;
 }
-.dark h1 { font-size: 6em; }
+.dark h1 { font-size: 5em; }
 
 a, a > code {
   font-family: 'PT Mono';
