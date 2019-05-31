@@ -1,0 +1,94 @@
+---
+title: "R, RStudio, y RStudio Cloud"
+author: "Edgar Ruiz"
+date: "Junio 2019"
+output:
+  xaringan::moon_reader:
+    css: "include/aprender.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+  - images
+---
+class: dark, middle, center
+# Instalar y usar R
+
+---
+class:regular
+# Requerimientos
+
+--
+* Bajar R de internet
+
+--
+* Instalar R
+
+--
+* Bajar RStudio de internet
+
+--
+* Instalar RStudio
+
+---
+class:regular
+# RStudio Cloud
+
+--
+* Registrarse en el sitio: *rstudio.cloud*
+
+--
+* Empezar a usar
+
+---
+class: exercise, middle, center
+# Inscribirse en **rstudio.cloud**
+## Ejercicio 2-1
+
+---
+class: regular
+### Vaya a *rstudio.cloud*, click en **Login**
+
+```{r, echo = FALSE, fig.align = "center", out.width = 800}
+knitr::include_graphics("images/02-rstudio-cloud-landing.png")
+```
+
+---
+class: regular
+### Seleccione *Google*, o una alternativa
+
+```{r, echo = FALSE, fig.align = "center", out.width = 650}
+knitr::include_graphics("images/02-rstudio-cloud-login.png")
+```
+
+---
+class: regular
+### Seleccione la cuenta que desea usar
+
+```{r, echo = FALSE, fig.align = "center", out.width = 650}
+knitr::include_graphics("images/02-choose-account.png")
+```
+
+---
+class: regular
+### Tiene acceso a sus proyectos
+
+```{r, echo = FALSE, fig.align = "center", out.width = 900}
+knitr::include_graphics("images/02-your-projects.png")
+```
+
+---
+class: exercise, middle, center
+# Unirse al espacio de trabajo
+## Ejercicio 2-2
+
+---
+class: regular
+### Navegue a *rstd.io/aprender*
+
+```{r, echo = FALSE, fig.align = "center", out.width = 800}
+knitr::include_graphics("images/02-workspace.png")
+```

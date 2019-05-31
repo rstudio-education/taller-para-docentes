@@ -32,6 +32,13 @@ strong { font-weight: 400; }
 }
 .dark h1 { font-size: 5em; }
 
+.exercise { 
+  background-color: #330033; 
+  color: #fff;
+}
+.exercise h1 { font-size: 4em; }
+.exercise h2 { font-size: 3.5em; }
+
 a, a > code {
   font-family: 'PT Mono';
   color: rgb(249, 38, 114);
