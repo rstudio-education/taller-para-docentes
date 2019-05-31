@@ -41,23 +41,29 @@ class: regular
 ---
 class:regular
 ## Capa 1
-
-```{r, fig.height = 5, fig.align = "center"}
+```{r, eval = FALSE}
 ggplot()
 ```
-
+```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/03-capa1.png")
+```
 ---
 class:regular
 ## Capa 2
 
-```{r, fig.height = 5, fig.align = "center"}
+```{r, eval = FALSE}
 ggplot() + geom_col(aes(cyl, mpg), data = mtcars)
 ```
-
+```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/03-capa2.png")
+```
 ---
 class:regular
 ## Capa 3
 
-```{r, fig.height = 5, fig.align = "center"}
+```{r, eval = FALSE}
 ggplot() + geom_col(aes(cyl, mpg), data = mtcars) + labs(title = "Millas por Galon")
+```
+```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/03-capa3.png")
 ```
