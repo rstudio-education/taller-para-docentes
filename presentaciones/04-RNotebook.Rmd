@@ -1,0 +1,50 @@
+---
+title: "Cuadernos con R"
+author: "Edgar Ruiz"
+date: "Junio 2019"
+output:
+  xaringan::moon_reader:
+    css: "include/aprender.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+---
+
+class: exercise, middle, center
+# Instalar paquetes
+## Ejercicio 4-1
+### **Archivo:** 04-1-instalar.R
+
+---
+class: regular
+## R Notebook (Cuaderno de R)
+
+.left-column[
+### Documento de **R Markdown**. Utiliza **bloques de código** que se pueden ejecutar independientemente. **Resultados visibles** debajo del bloque.  
+]
+
+.right-column[
+```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/04-notebook-preview.png")
+```
+]
+
+---
+class: regular
+# Los resultados
+
+--
+* El archivo HTML se puede compartir facilmente
+
+--
+* Los resultados se pueden publicar en RPubs 
+
+---
+class: exercise, middle, center
+# Usar R Notebooks
+## Ejercicio 4-2
+### **Archivo:** 04-2-RNotebook.Rmd

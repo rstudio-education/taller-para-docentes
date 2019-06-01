@@ -45,3 +45,12 @@ a, a > code {
   text-decoration: none;
 }
 
+.left-column {
+  width: 40%;
+  float: left;
+}
+
+.right-column {
+  width: 60%;
+  float: right;
+}

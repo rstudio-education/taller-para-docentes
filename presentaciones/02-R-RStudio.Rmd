@@ -92,3 +92,9 @@ class: regular
 ```{r, echo = FALSE, fig.align = "center", out.width = 800}
 knitr::include_graphics("include/02-workspace.png")
 ```
+
+---
+class: exercise, middle, center
+# Acceder datos
+## Ejercicio 2-2
+### **Archivo:** 02-2-librerias.R

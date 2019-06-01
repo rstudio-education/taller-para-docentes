@@ -67,3 +67,9 @@ ggplot() + geom_col(aes(cyl, mpg), data = mtcars) + labs(title = "Millas por Gal
 ```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/03-capa3.png")
 ```
+
+---
+class: exercise, middle, center
+# Crear gráficas
+## Ejercicio 3
+### **Archivo:** 03-1-graficas.R y 03-2-graficas.R
