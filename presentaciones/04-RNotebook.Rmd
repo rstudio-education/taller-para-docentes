@@ -28,7 +28,7 @@ class: regular
 ]
 
 .right-column[
-```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+```{r, out.height = 400, out.width = 500, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/04-notebook-preview.png")
 ```
 ]

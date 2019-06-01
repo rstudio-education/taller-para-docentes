@@ -1,0 +1,199 @@
+---
+title: "El tidyverse"
+author: "Edgar Ruiz"
+date: "Junio 2019"
+output:
+  xaringan::moon_reader:
+    css: "include/aprender.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+---
+
+class: exercise, middle, center
+# Instalar paquetes
+## Ejercicio 5-1
+### **Archivo:** 05-1-instalar-tidyverse.R
+
+---
+class: regular
+## Ciencia de Datos
+```{r, eval = FALSE, echo = FALSE}
+#remotes::install_github("javierluraschi/nomnoml")
+library(nomnoml)
+
+nomnoml("
+#direction: right
+#edgeMargin: 4
+#padding: 50
+#fontSize: 30
+[Importar] -> [Ordenar]
+[Ordenar] -> [Entender]
+[Entender |
+  [Transformar] -> [Visualizar] 
+  [Visualizar] -> [Modelar]
+  [Modelar] -> [Transformar]
+]
+[Entender] -> [Comunicar]
+")
+```
+```{r, out.height = 500, out.width = 1050, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-analysis.png")
+```
+
+---
+class: regular
+## El tidyverse
+
+.left-column[
+```{r, out.height = 350, out.width = 400, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-packages.png")
+```
+]
+.right-column[
+### Una **colección de paquetes de R que son diseñados para la Ciencia de Datos**. Todos los paquetes utilizan la misma filosofía de diseño, gramática y estructuras de datos.
+
+]
+
+---
+class: regular
+## La meta del "tidyverse"
+
+.left-column[
+```{r, out.height = 350, out.width = 400, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-meta-tidyverse.png")
+```
+]
+.right-column[
+### Resolver problemas complicados mediante la combinación de diferentes piezas que son consistentes unas con otras.
+]
+
+---
+class: dark, middle, center
+# Los principios del "tidyverse"
+
+---
+class: regular
+## Principio #1 - Use datos ordenados
+
+--
+1. Cada línea es una observación
+
+--
+1. Cada columna es una variable
+
+--
+
+.left-column[
+### No
+```{r, echo = FALSE}
+tibble::tribble(~fecha, ~nombre, ~mate, ~ingles, "1/1/99", "Juan Perez", 90, 60)
+```
+]
+.right-column[
+### Sí
+```{r, echo = FALSE}
+tibble::tribble(~mes, ~anio, ~primer, ~apellido, ~materia, ~puntos,
+                  1,     99, "Juan", "Perez",    "mate",     90,
+                  1,     99, "Juan", "Perez",    "ingles",   60
+                )
+```
+]
+
+---
+class: regular
+## Principio #2 – Cada función es un paso
+
+.left-column[
+#### Seleccione las calificaciones de Matemática 
+
+#### Agrupa por cada primer nombre y apellido
+
+#### Calcule el promedio de las calificationes 
+
+#### Imprime los resultados 
+]
+
+.right-column[
+ 
+ 
+`mate <- filter(datos, materia == "matematica")`
+
+`alumno <- group_by(mate, primer, apellido)`
+
+`promedio <- summarise(alumno, promedio = mean(puntos))`
+
+`promedio`
+]
+
+---
+class: regular
+## Problemas con el código
+
+--
+### 1. Creamos variables que usamos solo una vez
+
+--
+### 2. Es difícil de leer, y entender, todo los pasos rápidamente.
+
+--
+
+ ```r
+mate <- filter(datos, materia == "matematica")
+
+alumno <- group_by(mate, primer, apellido)
+
+promedio <- summarise(alumno, promedio = mean(puntos))
+
+promedio
+```
+
+---
+class: regular
+## Principio #3 - Combine con `%>%`
+
+--
+### Antes
+
+ ```r
+mate <- filter(datos, materia == "matematica")
+alumno <- group_by(mate, primer, apellido)
+promedio <- summarise(alumno, promedio = mean(puntos))
+promedio
+```
+
+--
+### Después
+
+```r
+datos %>%
+  filter(materia == "matematica") %>%
+  group_by(primer, apellido) %>%
+  summarise(promedio = mean(puntos))
+```
+
+---
+class: regular
+## Los principios del "tidyverse"
+
+--
+
+1. Las estructuras principales son datos ordenados
+
+--
+
+1. Cada función representa un paso
+
+--
+
+1. Las funciones se combinan con `%>%`
+
+---
+class: exercise, middle, center
+# Usar R Notebooks
+## Ejercicio 5-2
+### **Archivo:** 05-2-tidyverse.Rmd
