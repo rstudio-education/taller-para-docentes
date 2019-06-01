@@ -7,7 +7,7 @@ output: html_notebook
 library(tidyverse)
 ```
 
-## Leer
+## Importar
 
 ```{r}
 archivo <- read_csv("datos/cuarto_grado.csv")
@@ -50,7 +50,7 @@ grados <- archivo %>%
 grados
 ```
 
-## Conocimiento
+## Entender (Transformar y Visualizar)
 
 ¿Cual es el promedio actual por cada clase?
 
@@ -100,4 +100,3 @@ grados %>%
   ggplot() +
   geom_bar(aes(mes, puntos), stat = "summary", fun.y = "mean")
 ```
-

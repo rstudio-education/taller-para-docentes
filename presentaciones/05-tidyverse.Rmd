@@ -194,6 +194,6 @@ class: regular
 
 ---
 class: exercise, middle, center
-# Usar R Notebooks
+# Analizar Datos con el `tidyverse`
 ## Ejercicio 5-2
 ### **Archivo:** 05-2-tidyverse.Rmd
