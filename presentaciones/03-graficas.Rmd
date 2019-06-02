@@ -1,10 +1,8 @@
 ---
-title: "Crear gráficas"
-author: "Edgar Ruiz"
-date: "Junio 2019"
 output:
   xaringan::moon_reader:
     css: "include/aprender.css"
+    seal: false
     nature:
       countIncrementalSlides: yes
       highlightLines: yes
@@ -12,7 +10,10 @@ output:
       ratio: 16:9
 resource_files:
   - include
-  - images
+---
+---
+class: title-slide, middle, center
+# Crear gráficas
 ---
 ```{r, include = FALSE}
 library(ggplot2)

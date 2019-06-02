@@ -1,8 +1,4 @@
 ---
-title: "¡Bienvenidos!"
-subtitle: "<strong>Enseñando Análisis de Datos</strong>"
-author: "Edgar Ruiz"
-date: "Junio 2019"
 output:
   xaringan::moon_reader:
     css: "include/aprender.css"

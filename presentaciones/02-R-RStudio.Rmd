@@ -1,9 +1,7 @@
 ---
-title: "R, RStudio, y RStudio Cloud"
-author: "Edgar Ruiz"
-date: "Junio 2019"
 output:
   xaringan::moon_reader:
+    seal: false
     css: "include/aprender.css"
     nature:
       countIncrementalSlides: yes
@@ -12,7 +10,12 @@ output:
       ratio: 16:9
 resource_files:
   - include
-  - images
+---
+---
+class: title-slide, middle, center
+
+# R, RStudio, y RStudio Cloud
+
 ---
 class: dark, middle, center
 # Instalar y usar R
@@ -96,5 +99,5 @@ knitr::include_graphics("include/02-workspace.png")
 ---
 class: exercise, middle, center
 # Acceder datos
-## Ejercicio 2-2
-### **Archivo:** 02-2-librerias.R
+## Ejercicio 2-3
+### **Archivo:** 02-3-librerias.R
