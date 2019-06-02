@@ -1,0 +1,34 @@
+---
+title: "Analyzar automobiles"
+output: html_notebook
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+library(skimr)
+library(corrr)
+library(datos)
+```
+
+```{r}
+vehiculos
+```
+
+```{r}
+skim(vehiculos)
+```
+
+```{r}
+vehiculos %>%
+  select_if(is.numeric) %>%
+  select(-id) %>%
+  correlate()
+```
+
+```{r}
+vehiculos %>%
+  select_if(is.numeric) %>%
+  select(-id) %>%
+  correlate() %>%
+  rplot()
+```

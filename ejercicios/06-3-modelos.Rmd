@@ -1,0 +1,38 @@
+---
+title: "Múltiples Modelos"
+output: html_notebook
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+library(tidymodels)
+library(datos)
+```
+
+```{r}
+set.seed(3030)
+separar <- initial_split(vehiculos)
+
+vehiculos_entrenar <- training(separar)
+vehiculos_prueba <- testing(separar)
+```
+
+```{r}
+por_traccion <- vehiculos_entrenar %>%
+  group_nest(traccion)
+
+por_traccion
+```
+```{r}
+modelo_traccion <- por_traccion %>%
+  mutate(modelo = map(data, ~lm(ciudad ~ motor + cilindros, data = .x)))
+
+modelo_traccion
+```
+
+```{r}
+modelo_traccion %>%
+  mutate(resultados = map(modelo, glance)) %>%
+  unnest(resultados)
+```
+

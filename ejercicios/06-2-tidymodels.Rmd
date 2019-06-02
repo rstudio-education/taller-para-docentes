@@ -1,23 +1,13 @@
 ---
-title: "Analyzar automobiles"
+title: "Usar `tidymodels`"
 output: html_notebook
 ---
 
 ```{r, include = FALSE}
 library(tidyverse)
 library(tidymodels)
-library(skimr)
 library(datos)
 ```
-
-```{r}
-vehiculos
-```
-
-```{r}
-skim(vehiculos)
-```
-
 
 ```{r}
 set.seed(3030)
@@ -73,27 +63,5 @@ modelo1 %>%
   as_tibble() %>%
   bind_cols(vehiculos_prueba) %>%
   select(motor, cilindros, ciudad, fit, lwr, upr)
-```
-
-```{r}
-por_traccion <- vehiculos_entrenar %>%
-  group_nest(traccion)
-
-por_traccion
-```
-```{r}
-modelo_traccion <- por_traccion %>%
-  mutate(modelo = map(data, ~lm(ciudad ~ motor + cilindros, data = .x)))
-
-modelo_traccion
-```
-
-```{r}
-modelo_traccion %>%
-  mutate(
-    rsqrt = map_dbl(modelo, ~ glance(.x)$r.squared),
-    df = map_dbl(modelo, ~ glance(.x)$df), 
-    pvalue = map_dbl(modelo, ~ glance(.x)$p.value)
-    )
 ```
 
