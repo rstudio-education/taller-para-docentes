@@ -75,7 +75,7 @@ knitr::include_graphics("include/05-meta-tidyverse.png")
 
 ---
 class: dark, middle, center
-# Los principios del "tidyverse"
+# Los principios del `tidyverse`
 
 ---
 class: regular
@@ -179,7 +179,7 @@ datos %>%
 
 ---
 class: regular
-## Los principios del "tidyverse"
+## Los principios del `tidyverse`
 
 --
 

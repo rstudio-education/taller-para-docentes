@@ -1,0 +1,99 @@
+---
+title: "Analyzar automobiles"
+output: html_notebook
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+library(tidymodels)
+library(skimr)
+library(datos)
+```
+
+```{r}
+vehiculos
+```
+
+```{r}
+skim(vehiculos)
+```
+
+
+```{r}
+set.seed(3030)
+separar <- initial_split(vehiculos)
+
+vehiculos_entrenar <- training(separar)
+vehiculos_prueba <- testing(separar)
+```
+
+
+```{r}
+modelo1 <- lm(ciudad ~ cilindros + motor, data = vehiculos_entrenar)
+```
+
+```{r}
+glance(modelo1)
+```
+
+```{r}
+tidy(modelo1)
+```
+
+
+```{r}
+modelo2 <- lm(ciudad ~ cilindros + motor + traccion, data = vehiculos_entrenar)
+```
+
+
+```{r}
+bind_rows(
+  glance(modelo1),
+  glance(modelo2)
+) 
+```
+
+
+```{r}
+modelo1 %>%
+  augment(newdata = vehiculos_prueba) %>%
+  metrics(ciudad, .fitted)
+```
+
+
+```{r}
+modelo2 %>%
+  augment(newdata = vehiculos_prueba) %>%
+  metrics(ciudad, .fitted)
+```
+
+```{r}
+modelo1 %>%
+  predict(newdata = vehiculos_prueba, interval = "prediction") %>%
+  as_tibble() %>%
+  bind_cols(vehiculos_prueba) %>%
+  select(motor, cilindros, ciudad, fit, lwr, upr)
+```
+
+```{r}
+por_traccion <- vehiculos_entrenar %>%
+  group_nest(traccion)
+
+por_traccion
+```
+```{r}
+modelo_traccion <- por_traccion %>%
+  mutate(modelo = map(data, ~lm(ciudad ~ motor + cilindros, data = .x)))
+
+modelo_traccion
+```
+
+```{r}
+modelo_traccion %>%
+  mutate(
+    rsqrt = map_dbl(modelo, ~ glance(.x)$r.squared),
+    df = map_dbl(modelo, ~ glance(.x)$df), 
+    pvalue = map_dbl(modelo, ~ glance(.x)$p.value)
+    )
+```
+
