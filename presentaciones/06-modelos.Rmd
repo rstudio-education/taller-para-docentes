@@ -37,7 +37,7 @@ knitr::include_graphics("include/06-skimr.png")
 
 ```{r, eval = FALSE}
 library(corrr)
-mtcars %>% correlate() %>% corrr::shave()  %>% rplot()
+mtcars %>% correlate() %>% shave()  %>% rplot()
 ```
 ```{r, out.height = 400, out.width = 800, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/06-corrr.png")
@@ -149,8 +149,7 @@ class: regular
 
 ```{r}
 mtcars %>%
-  group_by(cyl) %>%
-  group_nest()
+  group_nest(cyl)
 ```
 
 ---
@@ -160,8 +159,7 @@ class: regular
 
 ```{r}
 mtcars %>%
-  group_by(cyl) %>%
-  group_nest() %>%
+  group_nest(cyl) %>%
   mutate(modelos = map(data, ~lm(mpg ~ wt, data = .x)))
 ```
 
@@ -171,8 +169,7 @@ class: regular
 
 ```{r}
 mtcars %>%
-  group_by(cyl) %>%
-  group_nest() %>%
+  group_nest(cyl) %>%
   mutate(modelos = map(data, ~lm(mpg ~ wt, data = .x)),
          resultados = map(modelos, glance)) %>%
   unnest(resultados)

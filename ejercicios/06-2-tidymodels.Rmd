@@ -9,33 +9,41 @@ library(tidymodels)
 library(datos)
 ```
 
+## Usar `rsample` para la muestra de datos
+
+1. `initial_split()` automáticamente divide los datos en dos grupos: entrenamiento (training) y prueba (testing)
 ```{r}
 set.seed(3030)
 separar <- initial_split(vehiculos)
+```
 
+2. Para extraer cada grupo de datos utilize `training()` y `testing()` respectivamente
+```{r}
 vehiculos_entrenar <- training(separar)
 vehiculos_prueba <- testing(separar)
 ```
 
-
+3. Crear un modelo simple con `lm()`
 ```{r}
 modelo1 <- lm(ciudad ~ cilindros + motor, data = vehiculos_entrenar)
 ```
 
+4. Las medidas del modelo se pueden ver usando `glance()`, del paquete `broom`
 ```{r}
 glance(modelo1)
 ```
 
+5. Para ver los efectos de cada variable utlize `tidy()`
 ```{r}
 tidy(modelo1)
 ```
 
-
+6. Crear un segundo modelo con `lm()`
 ```{r}
 modelo2 <- lm(ciudad ~ cilindros + motor + traccion, data = vehiculos_entrenar)
 ```
 
-
+7. El comando de `bind_rows()` puede juntar los resultados de `glance()` en una sola tabla
 ```{r}
 bind_rows(
   glance(modelo1),
@@ -43,25 +51,23 @@ bind_rows(
 ) 
 ```
 
+8. La función `augment()` agrega predicciones a una tabla.  En este caso la tabla que contiene los datos de prueba
+```{r}
+modelo1 %>%
+  augment(newdata = vehiculos_prueba) 
+```
 
+9. Agregar la función `metrics()` automaticamente calcula y devuelve los resultados del desempeño del modelo
 ```{r}
 modelo1 %>%
   augment(newdata = vehiculos_prueba) %>%
   metrics(ciudad, .fitted)
 ```
 
-
+10. Facilmente se puede cambiar el modelo para analizar
 ```{r}
 modelo2 %>%
   augment(newdata = vehiculos_prueba) %>%
   metrics(ciudad, .fitted)
-```
-
-```{r}
-modelo1 %>%
-  predict(newdata = vehiculos_prueba, interval = "prediction") %>%
-  as_tibble() %>%
-  bind_cols(vehiculos_prueba) %>%
-  select(motor, cilindros, ciudad, fit, lwr, upr)
 ```
 
