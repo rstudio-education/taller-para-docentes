@@ -1,6 +1,6 @@
 ---
-title: "¡Bienvenidos!"
-subtitle: "<strong>Enseñando Análisis de Datos</strong>"
+title: "Enseñando Análisis de Datos"
+subtitle: "<strong>¡Bienvenidos!</strong>"
 author: "Edgar Ruiz"
 date: "Junio 2019"
 output:
@@ -27,4 +27,7 @@ resource_files:
 ```
 
 ```{r, child = "05-tidyverse.Rmd"}
+```
+
+```{r, child = "06-modelos.Rmd"}
 ```
