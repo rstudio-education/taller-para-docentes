@@ -19,7 +19,11 @@ library(skimr)
 
 ---
 class: title-slide, middle, center
-# Modelar
+# Modelar con R
+
+---
+class: dark, middle, center
+# Paquetes para exploración
 
 ---
 # Analisis rápido con `skimr`
@@ -141,6 +145,10 @@ class: exercise, middle, center
 # Modelos con `tidymodels`
 ## Ejercicio 6-2
 ### **Archivo:** 06-2-tidymodels.Rmd
+
+---
+class: dark, middle, center
+# Modelo por sección
 
 ---
 class: regular
