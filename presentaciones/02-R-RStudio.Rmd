@@ -96,8 +96,4 @@ class: regular
 knitr::include_graphics("include/02-workspace.png")
 ```
 
----
-class: exercise, middle, center
-# Acceder datos
-## Ejercicio 2-3
-### **Archivo:** 02-3-librerias.R
+

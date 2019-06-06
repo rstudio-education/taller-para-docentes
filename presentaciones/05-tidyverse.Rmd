@@ -15,10 +15,6 @@ resource_files:
 class: title-slide, middle, center
 # El `tidyverse`
 ---
-class: exercise, middle, center
-# Instalar paquetes
-## Ejercicio 5-1
-### **Archivo:** 05-1-instalar-tidyverse.R
 
 ---
 class: regular
@@ -196,5 +192,5 @@ class: regular
 ---
 class: exercise, middle, center
 # Analizar Datos con el `tidyverse`
-## Ejercicio 5-2
-### **Archivo:** 05-2-tidyverse.Rmd
+## Ejercicio 5-1
+### **Archivo:** 05-1-tidyverse.Rmd

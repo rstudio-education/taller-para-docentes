@@ -1,7 +1,3 @@
-# Instale los paquetes necesarios
-install.packages("ggplot2")
-install.packages("datos")
-
 # Cargue los paquetes en su sesión de R
 library(ggplot2)
 library(datos)

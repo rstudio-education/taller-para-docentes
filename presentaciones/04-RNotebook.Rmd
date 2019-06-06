@@ -14,11 +14,6 @@ resource_files:
 ---
 class: title-slide, middle, center
 # Cuadernos con R
----
-class: exercise, middle, center
-# Instalar paquetes
-## Ejercicio 4-1
-### **Archivo:** 04-1-instalar.R
 
 ---
 class: regular
@@ -47,5 +42,5 @@ class: regular
 ---
 class: exercise, middle, center
 # Usar R Notebooks
-## Ejercicio 4-2
+## Ejercicio 4-1
 ### **Archivo:** 04-2-RNotebook.Rmd
