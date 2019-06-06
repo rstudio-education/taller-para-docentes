@@ -1,4 +1,4 @@
-# aprendeR
+# Taller para Docentes
 
 <!-- badges: start -->
 <!-- badges: end -->
