@@ -15,6 +15,7 @@ resource_files:
 class: title-slide, middle, center
 
 # R, RStudio, y RStudio Cloud
+## Unidad 2
 
 ---
 class: dark, middle, center
@@ -28,13 +29,13 @@ class:regular
 * Bajar R de internet
 
 --
-* Instalar R
+* **Instalar R**
 
 --
 * Bajar RStudio de internet
 
 --
-* Instalar RStudio
+* **Instalar RStudio**
 
 ---
 class:regular
@@ -96,4 +97,43 @@ class: regular
 knitr::include_graphics("include/02-workspace.png")
 ```
 
+---
+class: dark, middle, center
+# Paquetes en R
 
+---
+class: regular
+
+# ¿Que es un paquete en R?
+
+--
+* **Expande las habilidades de R**
+
+--
+* Programa que agrega funciones y/o datos a su sesión de R
+
+--
+* Se instala después de instalar R
+
+--
+* La fuente más importante de paquetes R se llama CRAN
+
+---
+class: regular
+
+# ¿Como se instala un paquete?
+
+--
+* Un comando dentro de R baja e instala el paquete
+
+--
+* La mayoría de paquetes son bajados de Internet
+
+--
+* Para usar un paquete ya instalado, use `library()`
+
+---
+class: exercise, middle, center
+# Instalar paquetes
+## Ejercicio 2-3
+### **Archivo:** 02-3-librerias.R

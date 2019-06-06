@@ -11,15 +11,16 @@ output:
 resource_files:
   - include
 ---
----
-class: title-slide, middle, center
-# Crear gráficas
----
 ```{r, include = FALSE}
 library(ggplot2)
 ```
+---
+---
+class: title-slide, middle, center
+# Visualizar datos
+## Unidad 3
 
-
+---
 class: dark, middle, center
 # Paquete `ggplot2`
 
@@ -72,5 +73,5 @@ knitr::include_graphics("include/03-capa3.png")
 ---
 class: exercise, middle, center
 # Crear gráficas
-## Ejercicio 3
-### **Archivo:** 03-1-graficas.R y 03-2-graficas.R
+## Ejercicio 3-2 y 3-3
+### **Archivo:** 03-2-graficas.R y 03-3-graficas.R

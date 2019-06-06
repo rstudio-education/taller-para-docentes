@@ -1,3 +1,7 @@
+# Instale dos paquetes de R
+install.packages("ggplot2")
+install.packages("datos")
+
 # Cargue los paquetes en su sesión de R
 library(ggplot2)
 library(datos)
@@ -16,3 +20,4 @@ str(diamantes)
 
 # Carge diamantes dentro de una variable
 mis_diamantes <- diamantes
+

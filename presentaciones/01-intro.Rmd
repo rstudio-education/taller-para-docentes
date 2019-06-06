@@ -44,13 +44,13 @@ class:regular
 * Fácil de empezar a aprender
 
 --
-* Fácil de utilizar, y avanzar
+* Fácil de utilizar
 
 --
 * Apoyan análisis pequeños y grandes
 
 --
-* Habilidades son útiles más alla de la universidad
+* Habilidades útiles afuera de la universidad
 
 ---
 class: dark, middle, center
@@ -87,13 +87,13 @@ class: regular
 * R
 
 --
+* Paquetes de R
+
+--
 * RStudio
 
 --
-* RStudio Cloud
-
---
-* tidyverse
+* RStudio Cloud (**Nuevo**)
 
 ---
 class: regular
