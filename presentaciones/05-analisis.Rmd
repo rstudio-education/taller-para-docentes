@@ -256,6 +256,6 @@ class: regular
 
 ---
 class: exercise, middle, center
+## Ejercicio
 # Analizar Datos con el `tidyverse`
-## Ejercicio 5-1
-### **Archivo:** 05-1-tidyverse.Rmd
+### **Archivo:** 05-tidyverse.Rmd

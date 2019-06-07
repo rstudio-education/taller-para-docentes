@@ -15,7 +15,6 @@ resource_files:
 class: title-slide, middle, center
 
 # R, RStudio, y RStudio Cloud
-## Unidad 2
 
 ---
 class: dark, middle, center
@@ -49,8 +48,8 @@ class:regular
 
 ---
 class: exercise, middle, center
+## Ejercicio 
 # Inscribirse en **rstudio.cloud**
-## Ejercicio 2-1
 
 ---
 class: regular
@@ -86,8 +85,9 @@ knitr::include_graphics("include/02-your-projects.png")
 
 ---
 class: exercise, middle, center
+## Ejercicio
 # Unirse al espacio de trabajo
-## Ejercicio 2-2
+
 
 ---
 class: regular
@@ -134,6 +134,6 @@ class: regular
 
 ---
 class: exercise, middle, center
+## Ejercicio
 # Instalar paquetes
-## Ejercicio 2-3
-### **Archivo:** 02-3-librerias.R
+### **Archivo:** 01-librerias.R

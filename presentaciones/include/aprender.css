@@ -17,7 +17,7 @@ strong { font-weight: 400; }
   color: #fff;
 }
 
-.regular h1 { font-size: 3.5em;}
+.regular h1 { font-size: 3.5em; }
 .regular h2 { font-size: 3em; }
 .regular h3 { font-size: 2em; }
 .regular h4 { font-size: 1em; }
@@ -36,8 +36,9 @@ strong { font-weight: 400; }
   background-color: #330033; 
   color: #fff;
 }
-.exercise h1 { font-size: 4em; }
-.exercise h2 { font-size: 3.5em; }
+.exercise h1 { font-size: 4.5em; }
+.exercise h2 { font-size: 3.5em; color: #999; }
+.exercise h3 { font-size: 2.5em; }
 
 a, a > code {
   font-family: 'PT Mono';

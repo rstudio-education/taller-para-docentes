@@ -41,6 +41,6 @@ class: regular
 
 ---
 class: exercise, middle, center
+## Ejercicio
 # Usar R Notebooks
-## Ejercicio 4-1
-### **Archivo:** 04-2-RNotebook.Rmd
+### **Archivo:** 04-RNotebook.Rmd

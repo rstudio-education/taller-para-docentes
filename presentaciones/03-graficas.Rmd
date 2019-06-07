@@ -17,7 +17,6 @@ library(ggplot2)
 ---
 class: title-slide, middle, center
 # Visualizar datos
-## Unidad 3
 
 ---
 class: dark, middle, center
@@ -71,6 +70,6 @@ knitr::include_graphics("include/03-capa3.png")
 
 ---
 class: exercise, middle, center
+## Ejercicio
 # Crear gráficas
-## Ejercicio 3-2 y 3-3
-### **Archivo:** 03-2-graficas.R y 03-3-graficas.R
+### **Archivo:** 02-graficas.R y 03-graficas.R
