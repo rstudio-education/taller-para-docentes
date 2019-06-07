@@ -19,30 +19,42 @@ class: title-slide, middle, center
 class: regular
 # Pasos del análisis 
 
-```{r, out.height = 400, out.width = 950, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-analysis-steps.png")
+```{r, out.height = 400, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-1.png")
 ```
 
 ---
 class: regular
 # Todos corren en **R**
 
-```{r, out.height = 400, out.width = 850, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-analisis-R.png")
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-2.png")
 ```
 
 ---
 class: regular
-## El tidyverse
+#  **Paquetes de R** facilitan el análisis
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-3.png")
+```
+
+---
+class: dark, middle, center
+# Introduciendo `tidyverse`
+
+---
+class: regular
+## ¿Que es el `tidyverse`?
 
 .left-column[
-```{r, out.height = 350, out.width = 400, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-packages.png")
+```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/hex/tidyverse.png")
 ```
 ]
 .right-column[
-### Una **colección de paquetes de R que son diseñados para la Ciencia de Datos**. Todos los paquetes utilizan la misma filosofía de diseño, gramática y estructuras de datos.
-
+### Una **colección de paquetes de R que son diseñados para la Ciencia de Datos**.
+### Todos los paquetes utilizan la misma filosofía de diseño, gramática y estructuras de datos.
 ]
 
 ---
@@ -63,33 +75,64 @@ class: regular
 
 # Leér
 
-* `readr` - Leér o importar datos
-* `jsonlite` - Leér archivos JSON
-* `readxl` - Leér archivos Excel
-* `rvest` - Leér el código detras the una página web
-* `xml2` - Leér archivos XML
+.left-column[
+```{r, out.height = 400, out.width = 330, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-paquetes-leer.png")
+```
+]
+.right-column[
+* `readr` - Archivos CSV, texto
+* `jsonlite` - Archivos JSON
+* `readxl` - Archivos Excel
+* `rvest` - Páginas Web
+* `xml2` - Archivos XML
+]
 
 ---
 class: regular
 
 # Ordenar y Transformar
 
+.left-column[
+```{r, out.height = 400, out.width = 300, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-paquetes-ordenar.png")
+```
+]
+.right-column[
 * `tidyr` - Ordernar datos
 * `dplyr` - Transformar datos
 * `stringr` - Manejo de texto
-* `lubridate` - Manejo de fechas
-* `forcats` - Variables de factores
-
+* `lubridate` - Para fechas
+* `forcats` - Factoriales
+]
 ---
 class: regular
 
 # Visualizar
 
+.left-column[
+```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/hex/ggplot2.png")
+```
+]
+.right-column[
 * `ggplot2` - Visualizar datos
+]
 
-# Programar
+---
+class: regular
 
-* `purrr` - Programación funcional
+
+# Otros
+
+.left-column[
+```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/hex/purrr.png")
+```
+]
+.right-column[
+* `purrr` - Programación funcional (para ciclos ó repeticiones)
+]
 
 ---
 class: dark, middle, center
