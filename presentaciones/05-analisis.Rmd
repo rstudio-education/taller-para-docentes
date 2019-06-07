@@ -25,6 +25,14 @@ knitr::include_graphics("include/05-analysis-steps.png")
 
 ---
 class: regular
+# Todos corren en **R**
+
+```{r, out.height = 400, out.width = 850, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-analisis-R.png")
+```
+
+---
+class: regular
 ## El tidyverse
 
 .left-column[

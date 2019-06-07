@@ -116,7 +116,7 @@ class: regular
 * Se instala después de instalar R
 
 --
-* La fuente más importante de paquetes R se llama CRAN
+* La fuente más importante se llama CRAN
 
 ---
 class: regular
