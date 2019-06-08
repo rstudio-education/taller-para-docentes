@@ -45,7 +45,7 @@ class: title-slide, middle, center
 
 ---
 class: regular
-## R Notebook (Cuaderno de R)
+## R Markdown
 
 .left-column[
 ```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
@@ -58,6 +58,14 @@ knitr::include_graphics("include/hex/rmarkdown.png")
 * Bloques se pueden ejecutar independientemente
 * **Resultados visibles** debajo del bloque.  
 ]
+
+---
+class: regular
+# Lo que cubre el `rmarkdown` 
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/cubre-rmarkdown.png")
+```
 
 ---
 class: regular

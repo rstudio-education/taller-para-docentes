@@ -143,5 +143,5 @@ class: regular
 ---
 class: exercise, middle, center
 ## Ejercicio
-# Instalar paquetes
+# Usar R
 ### **Archivo:** 01-librerias.R

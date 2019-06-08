@@ -43,16 +43,16 @@ knitr::include_graphics("include/05-meta-tidyverse.png")
 ]
 
 ---
-class: dark, middle, center
-# Paquetes del `tidyverse`
-
----
 class: regular
 # Lo que cubre el `tidyverse` 
 
 ```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-pasos-3.png")
+knitr::include_graphics("include/cubre-tidyverse.png")
 ```
+
+---
+class: dark, middle, center
+# Paquetes del `tidyverse`
 
 ---
 class: regular

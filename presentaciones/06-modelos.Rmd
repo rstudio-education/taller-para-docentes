@@ -74,6 +74,14 @@ knitr::include_graphics("include/06-tidymodels_hex.png")
 
 ---
 class: regular
+# Lo que cubre el `tidymodels` 
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/cubre-tidymodels.png")
+```
+
+---
+class: regular
 
 # Paquetes del `tidymodels`
 
@@ -94,15 +102,6 @@ class: regular
 `tidyposterior` - **Compara modelos Bayes** usando muestra re-tomadas
 
 `tidytext` - Para analysis de **datos de texto**
-
----
-class: regular
-# Lo que cubre el `tidymodels` 
-
-```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-pasos-3.png")
-```
-
 
 ---
 class: regular
