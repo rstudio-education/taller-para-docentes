@@ -79,4 +79,4 @@ knitr::include_graphics("include/03-capa3.png")
 class: exercise, middle, center
 ## Ejercicio
 # Crear gráficas
-### **Archivo:** 02-graficas.R y 03-graficas.R
+### **Archivos:** 02-graficas.Rmd y 03-graficas.Rmd

@@ -13,6 +13,34 @@ resource_files:
 ---
 ---
 class: title-slide, middle, center
+# Análisis de Datos
+
+---
+class: regular
+# Pasos del análisis 
+
+```{r, out.height = 400, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-1.png")
+```
+
+---
+class: regular
+# Todos corren en **R**
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-2.png")
+```
+
+---
+class: regular
+#  **Paquetes de R** facilitan el análisis
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-3.png")
+```
+
+---
+class: title-slide, middle, center
 # Introduciendo el `tidyverse`
 
 ---
@@ -20,7 +48,7 @@ class: regular
 # ¿Que es el `tidyverse`?
 
 .left-column[
-```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+```{r, out.height = 300, out.width = 280, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/hex/tidyverse.png")
 ```
 ]
@@ -95,7 +123,7 @@ class: regular
 # Visualizar
 
 .left-column[
-```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+```{r, out.height = 300, out.width = 280, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/hex/ggplot2.png")
 ```
 ]
@@ -109,7 +137,7 @@ class: regular
 # Otros
 
 .left-column[
-```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+```{r, out.height = 300, out.width = 280, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/hex/purrr.png")
 ```
 ]
@@ -241,4 +269,4 @@ class: regular
 class: exercise, middle, center
 ## Ejercicio
 # Analizar Datos con el `tidyverse`
-### **Archivo:** 05-tidyverse.Rmd
+### **Archivo:** 04-tidyverse.Rmd

@@ -19,7 +19,7 @@ library(skimr)
 
 ---
 class: title-slide, middle, center
-# Modelar con R
+# Modelar con **R**
 
 ---
 class: dark, middle, center
@@ -51,7 +51,7 @@ knitr::include_graphics("include/06-corrr.png")
 class: exercise, middle, center
 ## Ejercicio
 # Analyzar `vehiculos`
-### **Archivo:** 06-vehiculos.Rmd
+### **Archivo:** 05-vehiculos.Rmd
 
 ---
 class: dark, middle, center
@@ -63,7 +63,7 @@ class: regular
 #`tidymodels`
 
 .left-column[
-```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
+```{r, out.height = 300, out.width = 280, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/06-tidymodels_hex.png")
 ```
 ]
@@ -153,7 +153,7 @@ class: exercise, middle, center
 
 ## Ejercicio
 # Modelos con `tidymodels`
-### **Archivo:** 07-tidymodels.Rmd
+### **Archivo:** 06-tidymodels.Rmd
 
 ---
 class: dark, middle, center
@@ -196,4 +196,4 @@ mtcars %>%
 class: exercise, middle, center
 ## Ejercicio
 # Modelos por segmentos
-### **Archivo:** 08-modelos.Rmd
+### **Archivo:** 07-modelos.Rmd

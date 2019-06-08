@@ -27,11 +27,11 @@ unlink(list.files(pattern = ".html"))
 ```{r, child = "03-graficas.Rmd"}
 ```
 
-```{r, child = "04-RNotebook.Rmd"}
+```{r, child = "04-analisis.Rmd"}
 ```
 
-```{r, child = "05-analisis.Rmd"}
+```{r, child = "05-modelos.Rmd"}
 ```
 
-```{r, child = "06-modelos.Rmd"}
+```{r, child = "06-comunicar.Rmd"}
 ```

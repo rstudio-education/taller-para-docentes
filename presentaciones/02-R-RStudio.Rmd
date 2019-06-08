@@ -144,4 +144,4 @@ class: regular
 class: exercise, middle, center
 ## Ejercicio
 # Usar R
-### **Archivo:** 01-librerias.R
+### **Archivo:** 01-librerias.Rmd
