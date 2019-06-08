@@ -13,39 +13,11 @@ resource_files:
 ---
 ---
 class: title-slide, middle, center
-# Analizar Datos
+# Introduciendo el `tidyverse`
 
 ---
 class: regular
-# Pasos del análisis 
-
-```{r, out.height = 400, out.width = 1000, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-pasos-1.png")
-```
-
----
-class: regular
-# Todos corren en **R**
-
-```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-pasos-2.png")
-```
-
----
-class: regular
-#  **Paquetes de R** facilitan el análisis
-
-```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
-knitr::include_graphics("include/05-pasos-3.png")
-```
-
----
-class: dark, middle, center
-# Introduciendo `tidyverse`
-
----
-class: regular
-## ¿Que es el `tidyverse`?
+# ¿Que es el `tidyverse`?
 
 .left-column[
 ```{r, out.height = 300, out.width = 300, fig.align = "center", echo = FALSE}
@@ -59,7 +31,7 @@ knitr::include_graphics("include/hex/tidyverse.png")
 
 ---
 class: regular
-## La meta del `tidyverse`
+# La meta del `tidyverse`
 
 .left-column[
 ```{r, out.height = 350, out.width = 400, fig.align = "center", echo = FALSE}
@@ -69,6 +41,18 @@ knitr::include_graphics("include/05-meta-tidyverse.png")
 .right-column[
 ### Resolver problemas complicados mediante la combinación de diferentes piezas que son consistentes unas con otras.
 ]
+
+---
+class: dark, middle, center
+# Paquetes del `tidyverse`
+
+---
+class: regular
+# Lo que cubre el `tidyverse` 
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-3.png")
+```
 
 ---
 class: regular
@@ -122,7 +106,6 @@ knitr::include_graphics("include/hex/ggplot2.png")
 ---
 class: regular
 
-
 # Otros
 
 .left-column[
@@ -153,15 +136,15 @@ class: regular
 .left-column[
 ### No
 ```{r, echo = FALSE}
-tibble::tribble(~fecha, ~nombre, ~mate, ~ingles, "1/1/99", "Juan Perez", 90, 60)
+tibble::tribble(~nombre, ~enero, ~febrero, "Juan Perez", 90, 60)
 ```
 ]
 .right-column[
 ### Sí
 ```{r, echo = FALSE}
-tibble::tribble(~mes, ~anio, ~primer, ~apellido, ~materia, ~puntos,
-                  1,     99, "Juan", "Perez",    "mate",     90,
-                  1,     99, "Juan", "Perez",    "ingles",   60
+tibble::tribble(~mes, ~anio, ~primer, ~apellido, ~puntos,
+                  1,     99, "Juan", "Perez",      90,
+                  2,     99, "Juan", "Perez",      60
                 )
 ```
 ]
@@ -240,7 +223,7 @@ datos %>%
 
 ---
 class: regular
-## Los principios del `tidyverse`
+# Los principios del `tidyverse`
 
 --
 

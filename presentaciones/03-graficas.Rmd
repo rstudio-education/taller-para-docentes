@@ -18,29 +18,36 @@ library(ggplot2)
 class: title-slide, middle, center
 # Visualizar datos
 
+
 ---
 class: dark, middle, center
 # Paquete `ggplot2`
+
 
 ---
 class: regular
 # Como funciona `ggplot2`
 
+
 --
 * Implementa la **gramática de las gráficas** en **R**
+
 
 --
 * Cualquier gráfica usando: *datos, coordenadas y objetos geométricos (geoms)*
 
+
 --
 * Asignar variables a las **propiedades visuales** 
+
 
 --
 * Se programa por **capas**
 
+
 ---
 class:regular
-## Capa 1
+# Capa 1
 ```{r, eval = FALSE}
 ggplot()
 ```
@@ -49,7 +56,7 @@ knitr::include_graphics("include/03-capa1.png")
 ```
 ---
 class:regular
-## Capa 2
+# Capa 2
 
 ```{r, eval = FALSE}
 ggplot() + geom_col(aes(cyl, mpg), data = mtcars)
@@ -59,7 +66,7 @@ knitr::include_graphics("include/03-capa2.png")
 ```
 ---
 class:regular
-## Capa 3
+# Capa 3
 
 ```{r, eval = FALSE}
 ggplot() + geom_col(aes(cyl, mpg), data = mtcars) + labs(title = "Millas por Galon")

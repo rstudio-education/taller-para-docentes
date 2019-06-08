@@ -68,7 +68,8 @@ knitr::include_graphics("include/06-tidymodels_hex.png")
 ```
 ]
 .right-column[
-### Conjunto de paquetes para modelamiento y análisis estadístico que comparting la misma filosofía de diseño, grámatica, y estructuras que el `tidyverse`
+### Conjunto de paquetes para modelamiento y análisis estadístico  
+### Comparten la misma filosofía de diseño, grámatica, y estructuras que el `tidyverse`
 ]
 
 ---
@@ -93,6 +94,15 @@ class: regular
 `tidyposterior` - **Compara modelos Bayes** usando muestra re-tomadas
 
 `tidytext` - Para analysis de **datos de texto**
+
+---
+class: regular
+# Lo que cubre el `tidymodels` 
+
+```{r, out.height = 450, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/05-pasos-3.png")
+```
+
 
 ---
 class: regular
@@ -153,7 +163,7 @@ class: dark, middle, center
 ---
 class: regular
 
-## Use `group_nest()` para agroupar secciones completas
+# `group_nest()`
 
 ```{r}
 mtcars %>%
@@ -163,7 +173,7 @@ mtcars %>%
 ---
 class: regular
 
-## Use `map()` para crear un modelo por cada agrupación
+# `map()`
 
 ```{r}
 mtcars %>%
@@ -173,7 +183,7 @@ mtcars %>%
 
 ---
 class: regular
-## Use `map()` + `unnest()` para ver los resultados en una tabla
+# `map()` + `unnest()` 
 
 ```{r}
 mtcars %>%

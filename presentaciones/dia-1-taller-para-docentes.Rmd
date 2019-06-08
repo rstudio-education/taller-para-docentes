@@ -14,6 +14,10 @@ output:
 resource_files:
   - include
 ---
+```{r, include = FALSE}
+unlink(list.files(pattern = ".html"))
+```
+
 ```{r, child = "01-intro.Rmd"}
 ```
 
