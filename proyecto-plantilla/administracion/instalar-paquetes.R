@@ -4,5 +4,6 @@ install.packages(c(
   "Rcpp", "htmltools", "knitr", "jsonlite", "base64enc", 
   "mime", "tidyverse", "tidymodels", "fs", "skimr", 
   "corrr", "babynames", "fueleconomy", "nycflights13", 
-  "nasaweather", "Lahman", "gapminder" 
+  "nasaweather", "Lahman", "gapminder", "xaringan", 
+  "flexdashboard"
 ))

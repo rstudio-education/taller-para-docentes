@@ -281,15 +281,15 @@ class: regular
 
 
 --
-1. Cada función representa un paso
+## 1. Cada función representa un paso
 
 
 --
-1. Las funciones se combinan con `%>%`
+## 2. Las funciones se combinan con `%>%`
 
 
 --
-1. Las estructuras principales son datos ordenados
+## 3. Use datos ordenados
 
 ---
 class: exercise, middle, center
