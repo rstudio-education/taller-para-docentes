@@ -24,27 +24,33 @@ class: dark, middle, center
 class:regular
 # Requerimientos
 
---
-* Bajar R de internet
 
 --
-* **Instalar R**
+1. Bajar R de internet
+
 
 --
-* Bajar RStudio de internet
+2. **Instalar R**
+
 
 --
-* **Instalar RStudio**
+3. Bajar RStudio de internet
+
+
+--
+4. **Instalar RStudio**
+
 
 ---
 class:regular
 # RStudio Cloud
 
 --
-* Registrarse en el sitio: *rstudio.cloud*
+1. Registrarse en el sitio: **rstudio.cloud**
+
 
 --
-* Empezar a usar
+2. Empezar a usar
 
 ---
 class: exercise, middle, center
@@ -108,7 +114,8 @@ class: regular
 
 
 --
-* **Expande las habilidades de R**
+* Expande las habilidades de R
+
 
 --
 * Programa que agrega funciones y/o datos a su sesión de R

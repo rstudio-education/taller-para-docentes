@@ -32,7 +32,7 @@ class: dark, middle, center
 library(skimr)
 skim(mtcars) 
 ```
-```{r, out.height = 400, out.width = 900, fig.align = "center", echo = FALSE}
+```{r, out.height = 350, out.width = 800, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/06-skimr.png")
 ```
 
@@ -43,7 +43,7 @@ knitr::include_graphics("include/06-skimr.png")
 library(corrr)
 mtcars %>% correlate() %>% shave()  %>% rplot()
 ```
-```{r, out.height = 400, out.width = 800, fig.align = "center", echo = FALSE}
+```{r, out.height = 350, out.width = 700, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/06-corrr.png")
 ```
 
@@ -85,23 +85,40 @@ class: regular
 
 # Paquetes del `tidymodels`
 
-`rsample` - Tiene una infrastructura para re-tomar **muestras** de datos para que los modelos puedan ser validados
+.left-column[
+```{r, out.height = 400, out.width = 250, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/tidymodels-first.png")
+```
+]
+.right-column[
+* `rsample` - Para re-tomar **muestras** de datos 
 
-`broom` - Convierte los resultados de **modelos de R en tablas ordenadas**
+* `broom` - Modelos de R en tablas ordenadas
 
-`yardstick` - Herramientas para **evaluar** modelos
+* `yardstick` - **Evaluar** modelos
 
-<hr>
+* `recipes` - Para **pre-procesar datos**
 
-`infer` - Una manera moderna de hacer **inferencia estadística**
+]
 
-`recipes` - Contiene multiple funciones para **pre-procesar datos**
+---
+class: regular
+# Paquetes del `tidymodels`
 
-`tidypredict` - Traduce algunos algoritmos de **predicción en SQL**
+.left-column[
+```{r, out.height = 400, out.width = 250, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/tidymodels-second.png")
+```
+]
+.right-column[
+* `infer` - Inferencias estadísticas
 
-`tidyposterior` - **Compara modelos Bayes** usando muestra re-tomadas
+* `tidypredict` - Traduce predicciones a SQL
 
-`tidytext` - Para analysis de **datos de texto**
+* `tidyposterior` - Compara modelos Bayes
+
+* `tidytext` - Datos de texto
+]
 
 ---
 class: regular

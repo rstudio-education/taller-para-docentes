@@ -17,20 +17,26 @@ class: dark, middle, center
 class:regular
 # "Yo quiero enseñar..."
 
+
 --
 * Estadística
+
 
 --
 * Biología
 
+
 --
 * Sociología
+
 
 --
 * Finanzas
 
+
 --
 * Diciplina que necesita analizar datos
+
 
 ---
 class: dark, middle, center
@@ -40,17 +46,22 @@ class: dark, middle, center
 class:regular
 # Necesita herramientas que...
 
+
 --
 * Fácil de empezar a aprender
+
 
 --
 * Fácil de utilizar
 
+
 --
 * Apoyan análisis pequeños y grandes
 
+
 --
 * Habilidades útiles afuera de la universidad
+
 
 ---
 class: dark, middle, center
@@ -60,20 +71,26 @@ class: dark, middle, center
 class: regular
 # Ventajas de **R**
 
+
 --
 * Lenguaje hecho por, y para estadísticos
+
 
 --
 *  Fácil de aprender
 
+
 --
 *  Comunidad mundial, y amigable
+
 
 --
 *  Integración con otros sistemas
 
+
 --
 *  Es grátis!
+
 
 ---
 class: dark, middle, center
@@ -83,17 +100,22 @@ class: dark, middle, center
 class: regular
 # Herramientas
 
+
 --
 * R
+
 
 --
 * Paquetes de R
 
+
 --
 * RStudio
 
+
 --
 * RStudio Cloud (**Nuevo**)
+
 
 ---
 class: regular

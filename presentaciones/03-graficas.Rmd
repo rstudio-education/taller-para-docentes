@@ -34,7 +34,7 @@ class: regular
 
 
 --
-* Cualquier gráfica usando: *datos, coordenadas y objetos geométricos (geoms)*
+* Cualquier gráfica usando: *datos, coordenadas y objetos geométricos (`geoms`)*
 
 
 --
@@ -48,20 +48,23 @@ class: regular
 ---
 class:regular
 # Capa 1
+
 ```{r, eval = FALSE}
 ggplot()
 ```
-```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+```{r, out.height = 380, out.width = 600, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/03-capa1.png")
 ```
+
 ---
 class:regular
 # Capa 2
 
 ```{r, eval = FALSE}
-ggplot() + geom_col(aes(cyl, mpg), data = mtcars)
+ggplot() + 
+  geom_col(aes(cyl, mpg), data = mtcars)
 ```
-```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+```{r, out.height = 380, out.width = 600, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/03-capa2.png")
 ```
 ---
@@ -69,9 +72,10 @@ class:regular
 # Capa 3
 
 ```{r, eval = FALSE}
-ggplot() + geom_col(aes(cyl, mpg), data = mtcars) + labs(title = "Millas por Galon")
+ggplot() + geom_col(aes(cyl, mpg), data = mtcars) + 
+  labs(title = "Millas por Galon")
 ```
-```{r, out.height = 400, out.width = 600, fig.align = "center", echo = FALSE}
+```{r, out.height = 380, out.width = 600, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/03-capa3.png")
 ```
 

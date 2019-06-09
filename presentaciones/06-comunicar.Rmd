@@ -77,9 +77,13 @@ knitr::include_graphics("include/rmarkdown-packages.png")
 
 .right-column[
 * Artículos y Reportes
+
 * Diapositivas
+
 * Libros
+
 * Lugares de internet
+
 * Tableros
 ]
 
