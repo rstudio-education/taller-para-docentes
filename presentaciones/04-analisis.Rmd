@@ -16,6 +16,11 @@ class: title-slide, middle, center
 # Análisis de Datos
 
 ---
+```{r, include = FALSE}
+library(tidyverse)
+library(datos)
+```
+
 class: regular
 # Pasos del análisis 
 
@@ -52,6 +57,7 @@ class: regular
 knitr::include_graphics("include/hex/tidyverse.png")
 ```
 ]
+
 .right-column[
 
 * Una colección de paquetes de R
@@ -160,109 +166,130 @@ class: dark, middle, center
 
 ---
 class: regular
-## Principio #1 - Use datos *ordenados*
+## ¿Cual es más fácil de léer?
+
+--
+### 1. **R** convencional
+
+```r
+au <- millas[millas$fabricante == "audi", ]
+tb <- table(au$modelo)
+gr <- data.frame(modelo = names(tb), n = as.integer(tb))
+gr 
+```
+
+--
+### 2. Estilo **tidyverse**
+
+```r
+millas %>%
+  filter(fabricante == "audi") %>%
+  count(modelo)
+```
+
+---
+class: regular
+## Principio #1 – Cada función es un paso 
+
+```r
+millas %>%
+  filter(fabricante == "audi") %>%
+  count(modelo)
+```
+
+.left-column[
+`read_csv()` - "lea archivo CSV..."
+
+`select()` - "seleccionar..."
+
+`filter()` - "filtrar..."
+
+`mutate()` - "crear columna..."
+
+`summarise()` - "sumarizar..."
+
+`group_by()` - "agrupar..."
+
+]
+
+.right-column[
+
+`count()` - "contar por..."
+
+`arrange()` - "ordernar..."
+
+`gather()` - "columnas a líneas..."
+
+`spread()` - "líneas a  columnas..."
+
+`separate()` - "separa en columnas..."
+
+`unite()` - "combina comlumnas..."
+]
+
+
+
+---
+class: regular
+## Principio #2 - Combine con `%>%`
+
+### Fácil de léer y alterar el análisis
+
+```r
+millas %>%
+  filter(fabricante == "honda") %>%
+  count(anio)
+```
+
+```r
+## # A tibble: 2 x 2
+##    anio     n
+##    <int> <int>
+## 1  1999     5
+## 2  2008     4
+```
+
+---
+class: regular
+## Principio #3 - Use datos *ordenados*
 
 --
 1. Cada línea es una observación
 
-
 --
 1. Cada columna es una variable
 
+--
+1. Cada celda es un valor
 
 --
-
-.left-column[
-### No
-```{r, echo = FALSE}
-tibble::tribble(~nombre, ~enero, ~febrero, "Juan Perez", 90, 60)
-```
-]
-.right-column[
-### Sí
-```{r, echo = FALSE}
-tibble::tribble(~mes, ~anio, ~primer, ~apellido, ~puntos,
-                  1,     99, "Juan", "Perez",      90,
-                  2,     99, "Juan", "Perez",      60
-                )
-```
-]
-
----
-class: regular
-## Principio #2 – Cada función es un paso 
-
---
-* Seleccione las calificaciones de Matemática <br/> `m <- filter(datos, materia == "mate")`
-
-
---
-* Agrupa por cada primer nombre y apellido <br/> `alumno <- group_by(m, primer, apellido)`
-
-
---
-* Calcule el promedio de las calificationes <br/> `pr <- summarise(alumno, mean(puntos))`
-
-
---
-* Imprime los resultados <br/> `pr`
-
----
-class: regular
-## Problemas con el código
-
---
-### 1. Creamos variables que usamos solo una vez
-
---
-### 2. Es difícil de leer, y entender, todo los pasos rápidamente.
-
---
-
-### `m <- filter(datos, materia == "mate")`
-### `alumno <- group_by(m, primer, apellido)`
-### `pr <- summarise(alumno, mean(puntos))`
-### `pr`
-
----
-class: regular
-## Principio #3 - Combine con `%>%`
-
---
-### Antes
-
- ```r
-mate <- filter(datos, materia == "matematica")
-alumno <- group_by(mate, primer, apellido)
-promedio <- summarise(alumno, promedio = mean(puntos))
-promedio
-```
-
---
-### Después
 
 ```r
-datos %>%
-  filter(materia == "matematica") %>%
-  group_by(primer, apellido) %>%
-  summarise(promedio = mean(puntos))
+## # A tibble: 7 x 6
+##   fabricante modelo motor  anio cilindros transmision
+##   <chr>      <chr>  <dbl> <int>     <int> <chr>      
+## 1 audi       a4       1.8  1999         4 auto(l5)   
+## 2 audi       a4       1.8  1999         4 manual(m5) 
+## 3 audi       a4       2    2008         4 manual(m6) 
+## 4 audi       a4       2    2008         4 auto(av)   
+## 5 audi       a4       2.8  1999         6 auto(l5)   
 ```
-
 ---
 class: regular
 # Los principios del `tidyverse`
 
---
 
-1. Las estructuras principales son datos ordenados
 
 --
-
 1. Cada función representa un paso
 
---
 
+--
 1. Las funciones se combinan con `%>%`
+
+
+--
+1. Las estructuras principales son datos ordenados
 
 ---
 class: exercise, middle, center

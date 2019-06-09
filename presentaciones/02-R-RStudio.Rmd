@@ -14,11 +14,11 @@ resource_files:
 ---
 class: title-slide, middle, center
 
-# R, RStudio, y RStudio Cloud
+# **R**, RStudio, y RStudio Cloud
 
 ---
 class: dark, middle, center
-# Instalar y usar R
+# Instalar y usar **R**
 
 ---
 class:regular
@@ -114,11 +114,11 @@ class: regular
 
 
 --
-* Expande las habilidades de R
+* **Expande las habilidades de R**
 
 
 --
-* Programa que agrega funciones y/o datos a su sesión de R
+* Programa que **agrega funciones y/o datos** a su sesión de R
 
 
 --
