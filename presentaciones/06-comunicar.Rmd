@@ -91,7 +91,7 @@ knitr::include_graphics("include/rmarkdown-packages.png")
 class: exercise, middle, center
 ## Ejercicio
 # Documentos de `rmarkdown` 
-### **Archivos:** 
+### **Archivos:** 08-presentacion.Rmd, 09-flexdashboard.Rmd
 
 ---
 class: title-slide, middle, center
@@ -118,4 +118,4 @@ knitr::include_graphics("include/hex/shiny.png")
 class: exercise, middle, center
 ## Ejercicio
 # Aplicaciones `shiny` 
-### **Archivos:** 
+### **Archivo:** 10-aplicacion.R

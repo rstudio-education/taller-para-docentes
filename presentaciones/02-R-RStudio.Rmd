@@ -59,7 +59,7 @@ class: exercise, middle, center
 
 ---
 class: regular
-## Vaya a *rstudio.cloud*, click en **Login**
+## Vaya a **rstudio.cloud**, click en **Login**
 
 ```{r, echo = FALSE, fig.align = "center", out.width = 800}
 knitr::include_graphics("include/02-rstudio-cloud-landing.png")
@@ -97,7 +97,7 @@ class: exercise, middle, center
 
 ---
 class: regular
-## Navegue a *rstd.io/aprender*
+## Navegue a **rstd.io/aprender**
 
 ```{r, echo = FALSE, fig.align = "center", out.width = 800}
 knitr::include_graphics("include/02-workspace.png")
