@@ -1,3 +1,0 @@
-"0","library(ggplot2)"
-"0","ggplot() +"
-"0","  geom_histogram(aes(ciudad), data = millas)"

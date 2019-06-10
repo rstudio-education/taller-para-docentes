@@ -1,4 +1,0 @@
-"0","ggplot(data = diamantes) +"
-"0","  geom_histogram(aes(precio), color = ""white"", bins = 10) +"
-"0","  labs(y = """") +"
-"0","  theme_minimal()"

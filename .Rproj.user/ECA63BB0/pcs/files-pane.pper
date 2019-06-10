@@ -1,8 +1,8 @@
 {
-    "path" : "~/taller-para-docentes/presentaciones",
+    "path" : "~/taller-para-docentes",
     "sortOrder" : [
         {
-            "ascending" : true,
+            "ascending" : false,
             "columnIndex" : 2
         }
     ]
