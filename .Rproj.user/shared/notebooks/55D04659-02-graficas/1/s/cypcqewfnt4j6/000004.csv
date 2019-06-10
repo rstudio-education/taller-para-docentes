@@ -1,0 +1,3 @@
+"0","ggplot(data = diamantes) +"
+"0","  geom_point(aes(precio, quilate, color = color), alpha = 0.3) +"
+"0","  theme_minimal()"

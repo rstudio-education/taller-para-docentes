@@ -1,0 +1,19 @@
+library(tidyverse)
+library(datos)
+
+
+au <- millas[millas$fabricante == "audi", ]
+tb <- table(au$modelo)
+gr <- data.frame(
+  modelo = names(tb),
+  n = as.integer(tb)
+  )
+gr 
+
+millas %>%
+  filter(fabricante == "audi") %>%
+  count(modelo)
+
+
+# knitr::include_graphics("include/06-skimr.png")
+# knitr::include_graphics("include/06-corrr.png")

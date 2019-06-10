@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560172980749.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "938883506",
+    "id" : "6BDB989D",
+    "lastKnownWriteTime" : 1559779920,
+    "last_content_update" : 1559779920,
+    "path" : "~/taller-para-docentes/ejercicios/06-tidymodels.Rmd",
+    "project_path" : "ejercicios/06-tidymodels.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

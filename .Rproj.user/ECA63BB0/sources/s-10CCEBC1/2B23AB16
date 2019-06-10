@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560172133007.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2B23AB16",
+    "lastKnownWriteTime" : 1560172161,
+    "last_content_update" : 1560172161866,
+    "path" : "~/taller-para-docentes/presentaciones/02-R-RStudio.Rmd",
+    "project_path" : "presentaciones/02-R-RStudio.Rmd",
+    "properties" : {
+        "cursorPosition" : "99,33",
+        "scrollLine" : "95"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

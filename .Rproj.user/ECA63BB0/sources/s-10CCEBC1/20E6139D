@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560172924733.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1978915477",
+    "id" : "20E6139D",
+    "lastKnownWriteTime" : 1560172958,
+    "last_content_update" : 1560172958998,
+    "path" : "~/taller-para-docentes/ejercicios/01-librerias.Rmd",
+    "project_path" : "ejercicios/01-librerias.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "8,27",
+        "scrollLine" : "24",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

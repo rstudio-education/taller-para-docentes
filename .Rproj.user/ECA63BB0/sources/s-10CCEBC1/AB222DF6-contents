@@ -1,0 +1,62 @@
+---
+title: "Analyzar automobiles"
+output: html_notebook
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+library(skimr)
+library(corrr)
+library(datos)
+```
+
+## Paquete `datos`
+
+El paquete `datos` contiene datos para práctica en español
+
+```{r}
+results <- help.search("datasets", package = "datos")
+results$matches[c("Name", "Title")]
+```
+
+## Explorar datos
+
+1. Cargar datos en una variable
+```{r}
+actuales <- vehiculos
+```
+
+2. Usar `glimpse()` para ver los datos
+```{r}
+glimpse(actuales)
+```
+
+3. Con `skim()` del paquete `skimr` provée much mas información
+```{r}
+skim(actuales)
+```
+
+4. Con `correlate()`, del paquete `corrr`, permite usar el pipe (`%>%`) para producir una tabla de correlaciones
+```{r}
+actuales %>%
+  select_if(is.numeric) %>%
+  correlate()
+```
+
+5. La función `rplot()` crea una gráfica fácilmente
+```{r}
+actuales %>%
+  select_if(is.numeric) %>%
+  correlate() %>%
+  rplot()
+```
+
+6. La función `shave()` quita los valores duplicados
+```{r}
+actuales %>%
+  select_if(is.numeric) %>%
+  correlate() %>%
+  shave() %>%
+  rplot()
+```
+
