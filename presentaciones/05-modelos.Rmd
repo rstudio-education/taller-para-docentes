@@ -112,7 +112,7 @@ class: regular
 # Paquetes del `tidymodels`
 
 .left-column[
-```{r, out.height = 400, out.width = 250, fig.align = "center", echo = FALSE}
+```{r, out.height = 400, out.width = 220, fig.align = "center", echo = FALSE}
 knitr::include_graphics("include/tidymodels-second.png")
 ```
 ]
