@@ -96,11 +96,40 @@ class: exercise, middle, center
 
 
 ---
-class: regular
-## Navegue a **rstd.io/aprender**
+class: regular, middle, center
+### Navegue a 
+# bit.ly/ucr-docentes
 
-```{r, echo = FALSE, fig.align = "center", out.width = 800}
-knitr::include_graphics("include/02-workspace.png")
+---
+class: regular
+### Haga click en "Join Space"
+
+```{r, echo = FALSE, fig.align = "center", out.width = 700}
+knitr::include_graphics("include/cloud-join.png")
+```
+
+---
+class: regular
+### Haga click en "Pojects"
+
+```{r, echo = FALSE, fig.align = "center", out.width = 700}
+knitr::include_graphics("include/cloud-welcome.png")
+```
+
+---
+class: regular
+### Haga click en "[+] Copy"
+
+```{r, echo = FALSE, fig.align = "center", out.width = 700}
+knitr::include_graphics("include/cloud-ejercicios.png")
+```
+
+---
+class: regular
+### Haga click en "OK"
+
+```{r, echo = FALSE, fig.align = "center", out.width = 700}
+knitr::include_graphics("include/cloud-copy.png")
 ```
 
 ---

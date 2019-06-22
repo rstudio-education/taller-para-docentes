@@ -115,17 +115,3 @@ class: regular
 
 --
 * RStudio Cloud (**Nuevo**)
-
-
----
-class: regular
-# Agenda
-
---
-* Hoy - 2 horas - Sesión 1 <br>
-**Como usar las herramientas**
-
-
---
-* Mañana - 2 horas - Sesión 2 <br>
-**Como usar las herramientas, para enseñar**
