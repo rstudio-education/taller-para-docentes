@@ -35,3 +35,6 @@ unlink(list.files(pattern = ".html"))
 
 ```{r, child = "06-comunicar.Rmd"}
 ```
+
+```{r, child = "07-cloud.Rmd"}
+```

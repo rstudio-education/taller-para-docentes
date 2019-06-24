@@ -1,0 +1,250 @@
+---
+output:
+  xaringan::moon_reader:
+    css: "include/aprender.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+  - images
+---
+---
+class: title-slide, middle, center
+# Crear un curso
+
+---
+class: dark, middle, center
+# Nuevo lugar de trabajo
+
+---
+class: regular
+## Haga click en el botón a la izquierda de "Your Workspace"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-01.png")
+```
+
+---
+class: regular
+## Haga click en "+ New Space"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-02.png")
+```
+
+---
+class: regular
+## Use "Mi Curso" para el nombre (Name)
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-03.png")
+```
+
+---
+class: dark, middle, center
+# Nuevo proyecto plantilla
+
+---
+class: regular
+## Hace click en "New Project"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-04.png")
+```
+
+---
+class: regular
+## Haga click a la derecha de "Mi Curso" y cambie el nombre, use "plantilla"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-05.png")
+```
+
+---
+class: regular
+## Haga click en "New Folder", llamelo "archivos-base", presione OK
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-06.png")
+```
+
+---
+class: regular
+## Haga click en "File", y después "Text File"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-07.png")
+```
+
+---
+class: regular
+## Grabe el archivo como "informacion-del-curso.md"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-08.png")
+```
+
+---
+class: regular
+## Installe el paquete `tidyverse`
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-09.png")
+```
+
+---
+class: regular
+## Haga click en "File" y después "R Notebook"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-09a.png")
+```
+
+---
+class: regular
+## Presione "Yes"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-09b.png")
+```
+
+---
+class: regular
+## Cierre el archivo sin grabar
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-09c.png")
+```
+
+---
+class: regular
+## Haga click en botón estrella, después "Access" y seleccione "Everyone in Mi Curso"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-10.png")
+```
+
+---
+class: regular
+## Haga click en "Mi Curso"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-11.png")
+```
+
+---
+class: regular
+## Haga click en botón estrella, y el botón de tres puntos
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-12.png")
+```
+
+---
+class: regular
+## Seleccione "plantilla" y despues OK
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-13.png")
+```
+
+---
+class: dark, middle, center
+# Nuevo proyecto
+
+---
+class: regular
+## Haga click en "Projects"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-14.png")
+```
+
+---
+class: regular
+## Haga click en "New Project"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-15.png")
+```
+
+---
+class: regular
+## Cambie el nombre a "Mi Ejercicio" y copie el código en la foto
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-16.png")
+```
+
+---
+class: regular
+## Agrege un nuevo "R Notebook"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-17.png")
+```
+
+---
+class: regular
+## Borre el contenido del R Notebook
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-18.png")
+```
+
+---
+class: regular
+## Reemplaze contenidos con el contenido de la foto
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-19.png")
+```
+
+---
+class: regular
+## Grabe el archivo como "mi_ejercicio"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-20.png")
+```
+
+---
+class: regular
+## Haga click en el botón estrella, selecione "Access" y después "Everyone in Mi Curso"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-22.png")
+```
+
+---
+class: regular
+## El nuevo ejercicio aparace como "Assignment"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-23.png")
+```
+
+---
+class: regular
+## Haga click en "Members"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-24.png")
+```
+---
+class: regular
+## Haga click en "Shared", y después en "Copy Sharing Link"
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-25.png")
+```
+---
+class: regular
+## Mande el link as su compañero 
+
+```{r, out.height = 500, out.width = 1000, fig.align = "center", echo = FALSE}
+knitr::include_graphics("include/curso/curso-26.png")
+```
